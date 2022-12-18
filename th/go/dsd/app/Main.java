@@ -1,7 +1,30 @@
 package th.go.dsd.app;
 
 class Main {
+
+    enum Level {
+        LOW,
+        MEDIUM,
+        HEIGHT
+    }
+
+    enum Status {
+        ACTIVE,
+        INACTIVE
+    }
+
     public static void main(String[] args) {
+
+        Status s = Status.ACTIVE;
+
+        if (s == Status.ACTIVE) {
+            System.out.println(s);
+        }
+
+        for (Status a : Status.values()) {
+            System.out.println(a);
+        }
+
         // int myInt = 9;
         // double myDouble = myInt;
 

@@ -2,7 +2,7 @@ package th.go.dsd.util;
 
 import java.util.ArrayList;
 
-public class Calc extends AppRunner {
+public class Calc implements AppRunner {
     public int add(int a, int b) {
         return a + b;
     }
