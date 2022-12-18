@@ -18,6 +18,7 @@ public abstract class AppRunner {
 }
 
 class CallResponse {
+    String value;
 }
 
 class CallParam {
