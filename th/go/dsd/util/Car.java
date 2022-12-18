@@ -15,4 +15,17 @@ public class Car extends Vehicle {
         return this.brand;
     }
 
+    public void honk() {
+        super.honk();
+        System.out.println("Car Beep Beep !!");
+    }
+
+    public String getInfo() {
+        return this.modelName;
+    }
+
+    public String sayHi() {
+        return "Hello";
+    }
+
 }

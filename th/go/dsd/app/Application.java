@@ -1,15 +1,17 @@
 package th.go.dsd.app;
 
-import java.util.ArrayList;
-
-import th.go.dsd.util.Car;
+import th.go.dsd.util.CallParam;
 
 public class Application {
     public static void main(String[] args) {
-        Car myCar = new Car();
-        myCar.honk();
-        System.out.println(myCar.getModelName());
+        CallParam cmd1 = new CallParam(args);
+        System.out.println(cmd1.getCommand());
+        System.out.println(cmd1.getSubCommand());
+        for (String option : cmd1.getOptions()) {
+            System.out.println(option);
+        }
     }
+
 }
 
 // javac th/go/dsd/app/Application.java
