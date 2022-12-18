@@ -1,12 +1,14 @@
 package th.go.dsd.app;
 
-import th.go.dsd.util.*;
+import java.util.ArrayList;
+
+import th.go.dsd.util.Car;
 
 public class Application {
     public static void main(String[] args) {
-        System.out.println("Hello World !!");
-        Calc c = new Calc();
-        System.out.println(c.add(10, 20));
+        Car myCar = new Car();
+        myCar.honk();
+        System.out.println(myCar.getModelName());
     }
 }
 
