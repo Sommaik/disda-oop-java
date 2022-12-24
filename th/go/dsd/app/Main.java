@@ -1,5 +1,7 @@
 package th.go.dsd.app;
 
+import th.go.dsd.util.OuterClass;
+
 class Main {
 
     enum Level {
@@ -15,15 +17,18 @@ class Main {
 
     public static void main(String[] args) {
 
-        Status s = Status.ACTIVE;
+        OuterClass oc = new OuterClass();
+        OuterClass.InnerClass ic = oc.new InnerClass();
 
-        if (s == Status.ACTIVE) {
-            System.out.println(s);
-        }
+        // Status s = Status.ACTIVE;
 
-        for (Status a : Status.values()) {
-            System.out.println(a);
-        }
+        // if (s == Status.ACTIVE) {
+        // System.out.println(s);
+        // }
+
+        // for (Status a : Status.values()) {
+        // System.out.println(a);
+        // }
 
         // int myInt = 9;
         // double myDouble = myInt;

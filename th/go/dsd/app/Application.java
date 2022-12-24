@@ -9,6 +9,7 @@ import th.go.dsd.util.CallParam;
 import th.go.dsd.util.CallResponse;
 import th.go.dsd.util.Car;
 import th.go.dsd.util.Echo;
+import th.go.dsd.util.MyInput;
 import th.go.dsd.util.Truck;
 
 public class Application {
@@ -19,6 +20,7 @@ public class Application {
         feature.put("echo", new Echo());
         feature.put("car", new Car());
         feature.put("truck", new Truck());
+        feature.put("myinput", new MyInput());
 
         if (feature.containsKey(cmd1.getCommand())) {
             AppRunner cmd = feature.get(cmd1.getCommand());
